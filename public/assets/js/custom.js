@@ -12,7 +12,7 @@
 
 	$(document).ready(function() {
 
-		var moduleHero      = $('.module-hero'),
+		var moduleHero    = $('.module-hero'),
 			modules         = $('.module-hero, .module, .module-sm'),
 			moduleSlideshow = $('.backstretch'),
 			cdDate          = $('#countdown').attr('data-countdown'),
@@ -23,7 +23,7 @@
 		/* ---------------------------------------------- */
 
 		$("#title").typed({
-			strings: ["Hello!", "You are Welcome!", "Coming Soon!"],
+			strings: ["Renovar Estetica","& Bem Estar"],
 			typeSpeed: 300,
 			backDelay: 900,
 			loop: true,
@@ -86,10 +86,10 @@
 
 		$('#countdown').countdown(cdDate, function(event) {
 			$(this).html(event.strftime(''
-				+ '<div><div>%D</div><i>days</i></div>'
-				+ '<div><div>%H</div><i>hours</i></div>'
-				+ '<div><div>%M</div><i>minutes</i></div>'
-				+ '<div><div>%S</div><i>seconds</i></div>'
+				+ '<div><div>%D</div><i>Dias</i></div>'
+				+ '<div><div>%H</div><i>horas</i></div>'
+				+ '<div><div>%M</div><i>minutos</i></div>'
+				+ '<div><div>%S</div><i>segundos</i></div>'
 			));
 		});
 
@@ -228,6 +228,8 @@
 			}, 900, 'swing');
 			e.preventDefault();
 		});
+
+    $('.custom-panel').remove();
 
 	});
 
