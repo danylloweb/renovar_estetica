@@ -25,21 +25,6 @@ class AuthController extends ServiceController{
     return response.json({error: false, message: 'user unauthenticated'});
   }
 
-  /**
-   * login
-   * @param request
-   * @param response
-   * @returns {Promise<*>}
-   */
-  async login({request, response}){
-    try {
-      return await this.send(this.urlDestiny + '/auth/token', request.method(), { Accept: 'application/json' }, request.body);
-    } catch (err) {
-      return response.status(401).send({ err });
-    }
-  }
-
-
 
 }
 
