@@ -76,9 +76,9 @@
 		 * Youtube video background
 		/* ---------------------------------------------- */
 
-		$(function(){
-			$('.video-player').mb_YTPlayer();
-		});
+		// $(function(){
+		// 	$('.video-player').mb_YTPlayer();
+		// });
 
 		/* ---------------------------------------------- /*
 		 * Countdown
@@ -156,65 +156,65 @@
 		 * Google Map
 		/* ---------------------------------------------- */
 
-		var mapID = $('#map');
-		var isDraggable = Math.max($(window).width(), window.innerWidth) > 480 ? true : false;
-
-		mapID.each(function() {
-
-			var GMaddress = mapID.attr('data-address');
-			var GMcontact = mapID.attr('data-contact');
-
-			mapID.gmap3({
-				action: "init",
-				marker: {
-					address: GMaddress,
-					data:    GMcontact,
-					options: {
-						icon: 'assets/images/map-icon.png'
-					},
-					events:{
-						mouseover: function(marker, event, context){
-							var map = $(this).gmap3("get"),
-							infowindow = $(this).gmap3({get:{name:"infowindow"}});
-
-							if (infowindow){
-								infowindow.open(map, marker);
-								infowindow.setContent(context.data);
-							} else {
-								$(this).gmap3({
-									infowindow:{
-										anchor:marker,
-										options:{content: context.data}
-									}
-								});
-							}
-						},
-						mouseout: function(){
-							var infowindow = $(this).gmap3({get:{name:"infowindow"}});
-							if (infowindow){
-								infowindow.close();
-							}
-						}
-					}
-				},
-				map: {
-					options: {
-						zoom: 16,
-						zoomControl: true,
-						zoomControlOptions: {
-							style: google.maps.ZoomControlStyle.SMALL
-						},
-						mapTypeControl: true,
-						scaleControl: false,
-						scrollwheel: false,
-						streetViewControl: false,
-						draggable: isDraggable,
-						styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
-					}
-				}
-			});
-
-		});
+		// var mapID = $('#map');
+		// var isDraggable = Math.max($(window).width(), window.innerWidth) > 480 ? true : false;
+    //
+		// mapID.each(function() {
+    //
+		// 	var GMaddress = mapID.attr('data-address');
+		// 	var GMcontact = mapID.attr('data-contact');
+    //
+		// 	mapID.gmap3({
+		// 		action: "init",
+		// 		marker: {
+		// 			address: GMaddress,
+		// 			data:    GMcontact,
+		// 			options: {
+		// 				icon: 'assets/images/map-icon.png'
+		// 			},
+		// 			events:{
+		// 				mouseover: function(marker, event, context){
+		// 					var map = $(this).gmap3("get"),
+		// 					infowindow = $(this).gmap3({get:{name:"infowindow"}});
+    //
+		// 					if (infowindow){
+		// 						infowindow.open(map, marker);
+		// 						infowindow.setContent(context.data);
+		// 					} else {
+		// 						$(this).gmap3({
+		// 							infowindow:{
+		// 								anchor:marker,
+		// 								options:{content: context.data}
+		// 							}
+		// 						});
+		// 					}
+		// 				},
+		// 				mouseout: function(){
+		// 					var infowindow = $(this).gmap3({get:{name:"infowindow"}});
+		// 					if (infowindow){
+		// 						infowindow.close();
+		// 					}
+		// 				}
+		// 			}
+		// 		},
+		// 		map: {
+		// 			options: {
+		// 				zoom: 16,
+		// 				zoomControl: true,
+		// 				zoomControlOptions: {
+		// 					style: google.maps.ZoomControlStyle.SMALL
+		// 				},
+		// 				mapTypeControl: true,
+		// 				scaleControl: false,
+		// 				scrollwheel: false,
+		// 				streetViewControl: false,
+		// 				draggable: isDraggable,
+		// 				styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#000000"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":16}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":17}]}]
+		// 			}
+		// 		}
+		// 	});
+    //
+		// });
 
 		/* ---------------------------------------------- /*
 		 * Scroll Animation
