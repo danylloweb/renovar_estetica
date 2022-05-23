@@ -23,7 +23,7 @@
 		/* ---------------------------------------------- */
 
 		$("#title").typed({
-			strings: ["Renovar Estética","& Bem-Estar"],
+			strings: ["Renovar Estética & Bem-Estar","Renovar Estética & Bem-Estar"],
 			typeSpeed: 300,
 			backDelay: 900,
 			loop: true,
