@@ -16,7 +16,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
+          passport: ${{ secrets.PASSWORD }}
           script: |
             cd /var/www/html/sites/renovar_estetica
             git pull origin main
