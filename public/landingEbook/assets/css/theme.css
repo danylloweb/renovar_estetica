@@ -1,0 +1,280 @@
+/*------- fonts -------*/
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;700&display=swap");
+/*------- end of fonts -------*/
+/*------- theme styles -------*/
+/*--- base ---*/
+body, html, .bg-body {
+  background-color: #fafafc !important;
+}
+
+body, p, li {
+  color: #7d7985;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #241c2e;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 700;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+h6.fw-regular, h5.fw-regular {
+  font-weight: 700 !important;
+}
+
+a, a:focus {
+  color: #FF4072;
+}
+
+a:hover {
+  color: #67089d;
+}
+
+.section-title {
+  font-size: 2.75rem;
+}
+
+.text-primary {
+  color: #FF4072 !important;
+}
+
+a.text-primary:hover {
+  color: #67089d !important;
+}
+
+.border-primary {
+  border-color: #FF4072 !important;
+}
+
+.btn-primary, .btn-primary:focus, .badge-primary {
+  background-color: #FF4072 !important;
+  border-color: #FF4072 !important;
+}
+
+.btn-primary:hover, .btn-primary.active, .btn-primary.active:hover {
+  background-color: #67089d !important;
+  border-color: #67089d !important;
+}
+
+.title-link, .title-link:focus {
+  color: #241c2e;
+}
+
+.title-link.primary-hover:hover {
+  color: #FF4072 !important;
+}
+
+.navbar-brand img {
+  max-height: 36px;
+}
+
+.btn {
+  padding: 0 2rem;
+}
+
+.bg-primary {
+  background-color: #FF4072 !important;
+}
+
+.overlay-dark {
+  background: rgba(18, 10, 26, 0.5);
+}
+
+/*--- end of base ---*/
+/*--- general ---*/
+.navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-nav .nav-link.open, .navbar-nav .open > .nav-link, .navbar-nav .nav-link:hover, .dark-mode .navbar-nav .nav-link:hover {
+  color: #FF4072 !important;
+}
+
+.menu-line li a.nav-link span:before {
+  background-color: #FF4072;
+}
+
+.card, .promo-box {
+  background-color: #fff;
+  box-shadow: 0px 3px 12px rgba(27, 26, 61, 0.025);
+}
+
+.form-control, input, textarea, .custom-select {
+  color: #7d7985;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-color: #e4e4ea;
+}
+
+.needs-validation .form-control:focus, .needs-validation input:focus, .needs-validation textarea:focus, .needs-validation .custom-select:focus {
+  color: #7d7985;
+  background-color: rgba(0, 0, 0, 0.05) !important;
+  border-color: #FF4072 !important;
+}
+
+:-webkit-input-placeholder {
+  color: #7d7985 !important;
+}
+
+::-moz-placeholder {
+  color: #7d7985 !important;
+}
+
+:-moz-placeholder {
+  color: #7d7985 !important;
+}
+
+:-ms-input-placeholder {
+  color: #7d7985 !important;
+}
+
+#video {
+  height: 600px;
+}
+
+/*--- end of general ---*/
+/*--- media-screens ---*/
+@media only screen and (max-width: 1320px) {
+  header.xl {
+    padding: 250px 0;
+  }
+  #video {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header.xl {
+    padding: 200px 0;
+  }
+  #video {
+    height: 460px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  header.xl {
+    padding: 200px 0 130px;
+  }
+  #about, #services, #packages {
+    background-image: none !important;
+  }
+  .navbar-expand-lg.menu-line .navbar-collapse .nav-item {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .navbar-expand-lg.menu-line .navbar-collapse .nav-item:last-child {
+    margin-bottom: 0.25rem;
+  }
+  .navbar-expand-lg.menu-line li a span {
+    padding: 0 0 0.25rem 0 !important;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .navbar-expand-lg .navbar-brand img {
+    width: auto;
+    max-width: 140px;
+    max-height: 34px;
+  }
+  #video {
+    height: 400px;
+  }
+  #cta.p-y-200 {
+    padding: 120px 0 !important;
+  }
+  .header-text {
+    max-width: 270px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  header .page-title, header .title {
+    font-size: 1.5rem;
+  }
+  #video {
+    height: 320px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .header-text {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-expand-lg.menu-line .navbar-nav .nav-link {
+    padding: 0 0.875rem !important;
+  }
+  .navbar-expand-lg.menu-line .navbar-nav .nav-link span {
+    padding: 0 0.375rem 0.25rem 0.375rem !important;
+  }
+}
+
+/*--- end of media-screens ---*/
+/*--- dark-mode ---*/
+body.dark-mode {
+  color: #e4e4ea;
+}
+
+body.dark-mode, .dark-mode .bg-body {
+  background-color: #1d1124 !important;
+}
+
+.dark-mode p a, .dark-mode p a:focus {
+  color: #FF4072;
+}
+
+.dark-mode .title-link:hover {
+  color: #FF4072 !important;
+}
+
+.dark-mode .navbar-light.bg-transparent.nav-fixed {
+  background-color: #120a1a !important;
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.007), 0 4px 6px rgba(255, 255, 255, 0.01);
+}
+
+.dark-mode .card, .dark-mode .promo-box, .dark-mode .offcanvas {
+  background-color: #120a1a;
+}
+
+.dark-mode .bg-light {
+  background: #120a1a !important;
+}
+
+.dark-mode .bg-white {
+  background: #000 !important;
+}
+
+.dark-mode .form-control, .dark-mode input, .dark-mode textarea, .dark-mode .custom-select {
+  color: #e4e4ea;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #25252b;
+}
+
+.dark-mode .needs-validation .form-control:focus, .dark-mode .needs-validation input:focus, .dark-mode .needs-validation textarea:focus, .dark-mode .needs-validation .custom-select:focus {
+  color: #e4e4ea;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #FF4072 !important;
+}
+
+.dark-mode ::-webkit-input-placeholder {
+  color: #e4e4ea !important;
+}
+
+.dark-mode ::-moz-placeholder {
+  color: #e4e4ea !important;
+}
+
+.dark-mode :-moz-placeholder {
+  color: #e4e4ea !important;
+}
+
+.dark-mode :-ms-input-placeholder {
+  color: #e4e4ea !important;
+}
+
+/*--- end of dark-mode ---*/
+/*------- end of theme styles -------*/

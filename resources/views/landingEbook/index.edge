@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title id="title_page">Ebook MicroAgulhamento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="danyllo ferreira" name="description"/>
+  <meta content="danyllo" name="author"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <link rel="shortcut icon" href="{{ assetsUrl('images/favicon.ico') }}">
+  {{ style('/landingEbook/assets/css/bootstrap.min.css') }}
+  {{ style('/landingEbook/assets/css/vendor/aos.css') }}
+  {{ style('/landingEbook/assets/css/style.css') }}
+  {{ style('/landingEbook/assets/css/theme.css') }}
+  {{ style('/landingEbook/assets/css/fontawesome-all.min.css') }}
+<body id="mode-switch" data-bs-spy="scroll" data-bs-target="#nav-scroll">
+
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
+
+<nav id="nav-scroll" class="navbar navbar-expand-lg navbar-light bg-transparent mobile-white-nav menu-line fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="">
+      <img src="{{ assetsUrl('images/logo.png') }}" alt="">
+    </a><!-- / navbar-brand -->
+
+    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu"
+            aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+      <span class="sr-only">Toggle navigation</span>
+    </button><!-- / navbar-toggler -->
+
+    <div class="collapse navbar-collapse" id="main-menu">
+      <ul class="navbar-nav mr-auto ml-15">
+        <li class="nav-item">
+          <a class="nav-link" href="#home"><span>inicio</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about"><span>sobre</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packages"><span>adquirir</span></a>
+        </li>
+      </ul><!-- / navbar-nav -->
+
+      <ul class="navbar-button p-0 m-0 ml-15">
+        <li class="nav-item">
+          <a href="javascript:void" onclick="comprar()" class="btn btn-icon btn-circle btn-primary" data-bs-toggle="tooltip"
+             data-bs-placement="bottom" title="" data-bs-original-title="adquira agora"><i
+              class="bi-calendar2-plus"></i></a>
+        </li>
+      </ul><!-- / navbar-button -->
+    </div><!-- / navbar-collapse -->
+  </div><!-- / container -->
+</nav>
+
+<header id="home" class="xl bg-img img-top-right img-tablet-xl-center"
+        style="background-image: url({{ assetsUrl('landingEbook/assets/images/imageHome.png') }});">
+  <div class="container">
+    <div class="header-content">
+      <div class="row v-center">
+        <div class="col-md-7">
+          <h5 class="fs-14 fw-regular mb-10" data-aos="fade-right">Ebook Microagulhamento Facial</h5>
+          <h1 class="page-title mb-25" data-aos="fade-right" data-aos-delay="50">Descubra os inúmeros benefícios para a
+            pele do seu paciente</h1>
+          <p class="fs-14 text-uppercase title-color mb-5" data-aos="fade-right" data-aos-delay="100">
+            Bem-vindo ao fascinante mundo do microagulhamento facial, um tratamento
+            revolucionário que oferece uma abordagem inovadora para cuidados com a pele. Neste ebook, exploraremos os
+            diversos benefícios dessa técnica surpreendente e como ela pode transformar a saúde e a aparência da pele do
+            seu paciente.</p>
+
+          <div class="info-wrap mt-50">
+            <div class="row" style="max-width: 600px;">
+              <button class="btn btn-primary btn-submit" onclick="comprar()" style="height: 600px">
+                <span>Adquirir Ebook Agora</span></button>
+            </div><!-- / row -->
+          </div><!-- / info-wrap -->
+        </div><!-- / column -->
+        <div class="col-md-5 text-right tablet-hidden">
+
+        </div><!-- / column -->
+      </div><!-- / row -->
+    </div><!-- / header-content -->
+  </div><!-- / container -->
+</header>
+
+<div class="main-container p-0">
+
+  <section id="about" class="lg pb-0 bg-img img-bottom-right">
+    <div class="container">
+      <div class="row v-center mb-100">
+        <div class="col-lg-7 tablet-lg-top-30 z-index-1">
+          <img src="{{ assetsUrl('landingEbook/assets/images/about.png') }}" alt="" class="rellax" data-rellax-speed="1"
+               data-rellax-percentage="0.5">
+        </div><!-- / column -->
+
+        <div class="col-lg-5 z-index-2">
+          <h2 class="section-title mb-30">O que é microagulhamento facial?</h2>
+          <p>O microagulhamento facial é um procedimento não invasivo que utiliza pequenas agulhas para criar
+            microperfurações na superfície da pele. Essas microlesões desencadeiam o processo natural de regeneração da
+            pele, promovendo a produção de colágeno e elastina.</p>
+          <button class="btn btn-primary btn-submit" onclick="comprar()" style="height: 600px">
+            <span>Adquirir Ebook Agora</span></button>
+        </div><!-- / column -->
+      </div><!-- / row -->
+
+      <div class="row v-center revert-order-tablet-lg">
+        <div class="col-lg-5 z-index-2">
+          <h2 class="fs-40 mb-30"><span class="fs-32 text-primary">O que eu vou aprender com o </span> <span class="d-block">Ebook Microagulhamento facial?</span>
+          </h2>
+          <p>Apresento a você o melhor Ebook sobre Microagulhamento, um guia completo que vai revolucionar os seus atendimentos!</p>
+          <p class="mb-20"><i class="bi-star"></i>Entenda a estrutura e função da pele como nunca.</p>
+          <p class="mb-20"><i class="bi-star"></i>Descubra os diferentes categorias de microagulhamento e os seus benefícios.</p>
+          <p class="mb-20"><i class="bi-star"></i>Defina seus objetivos com o microagulhamento e alcance resultados incríveis.</p>
+          <p class="mb-20"><i class="bi-star"></i>Conheça as contra indicações e contra indicações para uma aplicação segura.</p>
+          <p class="mb-20"><i class="bi-star"></i>Explore os diversos tipos de aplicadores, escolhendo o ideal para você.</p>
+          <p class="mb-20"><i class="bi-star"></i>Entenda as técnicas de aplicação para cada aplicador.</p>
+          <p class="mb-20"><i class="bi-star"></i>Saiba quais ativos potencializam os resultados do microagulhamento.</p>
+          <button class="btn btn-primary btn-submit" onclick="comprar()" style="height: 600px">
+            <span>Adquirir Ebook Agora</span></button>
+        </div><!-- / column -->
+
+
+        <div class="col-lg-7 tablet-lg-top-30 z-index-1">
+          <img src="{{ assetsUrl('landingEbook/assets/images/ph-pck.png') }}" alt="" class="rellax"
+               data-rellax-speed="2.5" data-rellax-percentage="0.5">
+        </div><!-- / column -->
+      </div><!-- / row -->
+    </div><!-- / container -->
+  </section><!-- / about -->
+
+  <section id="packages" class="lg bg-img img-top-right">
+    <div class="container">
+      <h2 class="section-title text-center mb-100">Como Adquirir</h2>
+      <div class="row v-center">
+        <div class="col-md-6 col-lg-4 tablet-lg-top-30" data-aos="fade-up" data-aos-delay="300">
+          <div class="card text-center card-w-raised-img-top bg-primary dark-mode">
+            <div class="card-body">
+              <img class="card-raised-img-top pos-center mb-20 circle"
+                   src="{{ assetsUrl('landingEbook/assets/images/ph-pack2.png') }}" alt="" style="max-width: 210px;">
+              <div class="pricing-table-title">
+                <h4 class="mb-30">Ebook Completo</h4>
+              </div><!-- / pricing-table-title -->
+              <div class="pricing-table-price mb-30">
+                <h6><span class="pricing-currency">R$</span> <span class="pricing-price">27,00</span></h6>
+              </div><!-- / pricing-table-price -->
+
+              <ul class="pl-0 pricing-box-list mb-30">
+                <li class="mb-15"><span>Estrutura da Pele</span></li>
+                <li class="mb-15"><span>Categorias de Microagulhamento</span></li>
+                <li class="mb-15"><span>Definição de Objetivo</span></li>
+                <li class="mb-15"><span>Indicações e contra indicações</span></li>
+                <li class="mb-15"><span>Tipos de aplicadores</span></li>
+                <li class="mb-0"><span>Ativos para pontencializador de resultados</span></li>
+              </ul>
+
+              <div class="pricing-table-button">
+                <a href="javascript:void" onclick="comprar()" class="btn btn-white pill"><span>Adquira agora</span></a>
+              </div><!-- / pricing-table-button -->
+            </div><!-- / card-body -->
+          </div><!-- / card -->
+        </div><!-- / column -->
+      </div><!-- / row -->
+    </div><!-- / container -->
+  </section><!-- / packages -->
+
+  <div id="cta" class="relative p-y-200 dark-mode text-center bg-img jarallax" data-jarallax data-speed="0.8"
+       style="background-image: url({{ assetsUrl('landingEbook/assets/images/bg-cta.jpg') }});">
+    <div class="container">
+      <h2 class="section-title fw-light mb-30" data-aos="fade-down">Aumente seu faturamento com o<span class="d-block fw-bold">Ebook Microagulhamento Facial</span>
+      </h2>
+      <p class="m-x-auto mb-30" data-aos="fade-right" data-aos-delay="100" style="max-width: 400px;">Revolucione os resultados de seus pacientes com esse ebook.</p>
+      <div class="btn-aos-wrap mb-100" data-aos="fade-up" data-aos-delay="200">
+        <a href="javascript:void" onclick="comprar()" class="btn btn-primary pill"><span>Adquira agora</span></a>
+      </div><!-- / btn-aos-wrap -->
+
+      <div class="absolute pos-center top-auto bottom-30 pt-30 w-100 bt-1 border-highlight">
+        <p>
+          <a href="https://www.facebook.com/renovar.esteticabemestar" class="title-link primary-hover fs-16 mr-15"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/renovar.esteticabemestar/" class="title-link primary-hover fs-16"><i class="fab fa-instagram"></i></a>
+        </p>
+        <p class="fs-16 title-color mb-0">© 2022 <a href="./" target="_blank" class="title-link primary-hover">Renovar
+            Estetica e Bem Estar</a></p>
+      </div><!-- / absolute -->
+    </div><!-- / container -->
+  </div><!-- / cta -->
+
+</div><!-- / main-container -->
+
+<button type="button" id="back-top" class="btn btn-icon btn-circle btn-primary btn-floating raised-sm">
+  <i class="bi-chevron-up"></i>
+</button>
+
+  {{ script('/landingEbook/assets/js/bootstrap.bundle.min.js') }}
+  {{ script('/landingEbook/assets/js/scroll-top.js') }}
+  {{ script('/landingEbook/assets/js/nav-fixed.js') }}
+  {{ script('/landingEbook/assets/js/theme.js') }}
+  {{ script('/landingEbook/assets/js/aos.js') }}
+<script>
+  AOS.init({
+    duration: 1000,
+  })
+</script>
+  {{ script('/landingEbook/assets/js/vendor/jarallax.min.js') }}
+  {{ script('/landingEbook/assets/js/vendor/jarallax-video.min.js') }}
+  {{ script('/landingEbook/assets/js/vendor/rellax.min.js') }}
+<script>
+  var rellax = new Rellax('.rellax');
+
+  function comprar() {
+    const headers   = new Headers({'Content-Type' : 'application/json'});
+    const myRequest = new Request('../registerClickCheckout', {
+      headers,
+      method: 'POST',
+      body: JSON.stringify({code:'PPU38CNRKCN'})
+    });
+    fetch(myRequest).then(function (response) {}).catch((error) => {});
+    window.location.href = 'https://go.perfectpay.com.br/PPU38CNRKCN';
+  }
+</script>
+</body>
+</html>
