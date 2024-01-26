@@ -31,14 +31,14 @@ class HomeController extends ServiceController {
     return view.render('service');
   }
 
-  async microagulhamento({view, request}) {
-    this.send(this.urlDestiny + 'register-click', 'POST', {Accept: 'application/json'}, request.body);
+  async microagulhamento({view}) {
+    this.send(this.urlDestiny + 'register-click', 'POST', {Accept: 'application/json'}, {code:'PPU38CNRKCN'});
     return view.render('landingEbook.index');
   }
 
-  async registerClickCheckout({request}) {
+  async registerClickCheckout() {
     try {
-      this.send(this.urlDestiny + 'register-click-checkout', 'POST', {Accept: 'application/json'}, request.body);
+      this.send(this.urlDestiny + 'register-click-checkout', 'POST', {Accept: 'application/json'}, {code:'PPU38CNRKCN'});
     } catch (error) {
       console.log(error)
     }
