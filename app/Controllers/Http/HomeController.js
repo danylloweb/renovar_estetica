@@ -33,7 +33,7 @@ class HomeController extends ServiceController {
 
   async microagulhamento({view}) {
     this.send(this.urlDestiny + 'register-click', 'POST', {Accept: 'application/json'}, {code:'PPU38CNRKCN'});
-    return view.render('landingEbook.index');
+    return view.render('landing');
   }
 
   async registerClickCheckout() {
